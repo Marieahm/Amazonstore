@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta
+	name="viewport"
+	content="width=device-width,
+			initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/paymentstyle.css"	class="css" />
+
+	
+		
+
+
+</head>
+<body>
+	<!--the contents  ------------------->
+	<div class="container">
+		<div class="head">
+			<div class=" logo">
+				<a href="index.html"><img src="images/plogo.jpg" alt=""></a>	
+			</div>
+			<a  href="single.html"><span class="close">X</span></a>
+		</div>
+	</div>
+
+	<div class="box">
+			<div class="main-content">
+			
+				<h2>Buy DSA Self-Paced Course Now !</h2>
+			</div>
+
+	<!--the top button------------------------>
+
+			<div class="last-content">
+				<button type="button" class="pay-now-btn">
+				Apply Coupons
+				</button>
+				<button type="button" class="pay-now-btn">
+				Pay with Netbanking
+				</button>
+
+			</div>
+	<!--the card details------------------------->
+
+			<div class="card-details">
+				<p>Pay using Credit or Debit card</p>
+			<div class="inupt-box">
+				<div >
+				<label> Card Number </label>
+				<input
+					type="number" class="field" id="card"
+						placeholder="###-###-###"/>
+				</div>
+
+				<div >
+				<label> CVC number </label>
+				<input type="number" class="field" id="cvc"
+					placeholder="xxx" />
+				</div>
+				<div >
+				<label> Card Holder name </label>
+				<input
+					type="text" class="field" id="name"
+					 placeholder="Enter your Name"/>
+				</div>
+				<div >
+					<label> Expiry Date </label>
+					<input
+						type="datetime" class="field" id="date"
+						 placeholder="MM-DD-YY/00:00:00"/>
+					</div>
+			</div>
+
+			
+		
+
+			<div>
+			<input type="checkbox" class="check" /><label id="chek1">Visa Card</label>
+				
+			<input type="checkbox" class="check" /><label id="chek2">Google Payment</label>
+			
+			</div>
+		</div>
+
+    
+	<button type="submit"	class="submit-now-btn" id="submitbtn" >	submit</button>
+	</div>
+	
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need	
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDo-Q0zrH7SVIbXBCsawig5bicL4biLNeg",
+  authDomain: "store-c946b.firebaseapp.com",
+  databaseURL: "https://store-c946b-default-rtdb.firebaseio.com",
+  projectId: "store-c946b",
+  storageBucket: "store-c946b.appspot.com",
+  messagingSenderId: "287705606459",
+  appId: "1:287705606459:web:69e96aa24fd52af52e2f1e",
+  measurementId: "G-GH97N4K27K"
+};
+firebase.initializeApp(firebaseConfig);
+console.log(firebase);
+  var db = firebase.firestore();
+
+ 
+  document.getElementById('.submit-now-btn').onclick = function(){
+    
+   const card_num = document.getElementById("card").value;
+   const cvc_num = document.getElementById("cvc").value;
+   const nname = document.getElementById("name").value;
+   const datee = document.getElementById("date").value;
+   set(ref(db, 'clients/' + card_number), {   
+	 
+      cvc_number : cvc_num,
+      name : nname ,
+      date :  Timestamp.fromDate(new Date("December 10, 2020")),
+     
+
+    })
+    .then(function() {
+      console.log("Doc successful");
+  })
+  .catch(function(error) {
+     console.error("Error writing doc", error);
+  });
+}
+  
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+</html>

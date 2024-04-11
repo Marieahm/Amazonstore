@@ -1,0 +1,5 @@
+.active :  Applies the hover color to a particular row or cell
+.success: Indicates a successful or positive action
+.info:Indicates a neutral informative change or action
+.warning:Indicates a warning that might need attention
+.danger:Indicates a dangerous or potentially negative action
