@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+  
+   <div class="container" id="content01">
+
+                <div class="img-slider">
+                 <img src="lo.png"  id="co2" alt="img">
+                   <h2>Welcome to Amazon Store</h2>
+                    </div>
+         
+  <div id="login_div" class="main-div">
+    <h2>LOGIN</h2>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()" id="btn">Login</button>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+   
+    <button onclick="logout()" id="btn1">Logout</button>
+  </div>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+
+  <script>
+    // Initialize Firebase
+    var config = {
+     apiKey: "AIzaSyApBBACt0mv9TJSm7mmXZ9bjbfNkB1CA-4",
+    authDomain: "test1-f37ae.firebaseapp.com",
+    databaseURL: "https://test1-f37ae-default-rtdb.firebaseio.com",
+    projectId: "test1-f37ae",
+    storageBucket: "test1-f37ae.appspot.com",
+    messagingSenderId: "296704735749",
+    appId: "1:287705606459:web:69e96aa24fd52af52e2f1e",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
+ 
