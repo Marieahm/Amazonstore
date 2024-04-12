@@ -1,0 +1,178 @@
+/*#F67777 pink
+p{
+    color: #F67777;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+}*/
+@font-face {
+    font-family: 'Oxygen-Bold';
+    src:url(../fonts/Oxygen-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src:url(../fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src:url(../fonts/Ubuntu-Bold.ttf) format('truetype');
+}
+@font-face{
+	font-family:'Oxygen-Regular';
+	src:url(../fonts/Oxygen-Regular.ttf) format('truetype');
+}
+
+.banner1{
+	text-align:center;
+	width: 100%;
+    height: 300px;
+    display: block;
+    background: url(../images/background.jpg)no-repeat ;
+    background-position: center 50%;
+    background-size: 100% 100%;
+	padding:5em 0;
+}
+.banner1 h1{
+
+	font-size:3em;
+	color: #fff;;
+	font-family: 'Ubuntu-Regular';
+}
+.banner1 em {
+    width: 100px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0.5em auto;
+}
+.upload{
+    text-align: center;
+    align-items: center;
+}
+#btn-input{
+    width: 300px;
+    padding: auto;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: 0;
+    background-color: #F67777;
+    color: #fff;
+    
+
+}
+#btn-input:hover{
+
+    color: #F67777;
+    background-color: #fff;
+}
+
+.upload #image_inpute[type="file"] {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+    
+}
+
+#display_img{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: 200px;
+    border: 1px solid gray;
+    background-color: #fcb7b78f;
+    background-position: center;
+    background-size: auto;
+    border: 0;
+    text-align: center;
+    align-items: center;
+    color: #bbb;
+}
+
+.imgprev{
+    display: none;
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .banner1 h1{
+
+        font-size:2.2em;
+    }
+    .banner1 em {
+        width: 80px;
+        height: 1px;
+        border-radius: 2px;
+        margin: 0.5em auto;
+    }
+    #btn-input{
+        width:200px;
+        padding: auto;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 8px 8px;
+        font-size: 15px;
+    }
+  
+
+}
+
+@media only screen and (max-width:425px) {
+    banner1{
+
+        width: 400px;
+        height: 300px;
+        background-size: 100% 100%;
+        padding:4em 0;
+    }
+    .banner1 h1{
+
+        font-size:2em;
+    }
+    .banner1 em {
+        width: 60px;
+        height: 0.8px;
+        border-radius: 1px;
+        margin: 0.5em auto;
+    }
+    #btn-input{
+        width:180px;
+        padding: auto;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 6px 6px;
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width:375px) {
+    .banner1{
+        text-align:center;
+        width: 360px;
+        height: 200px;
+        padding:1.5em 0;
+    }
+    .banner1 h1{
+
+        font-size:1.5em;
+    }
+    
+    #btn-input{
+        width:180px;
+        padding: auto;
+        margin-top: -30px;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 6px 6px;
+        font-size: 12px;
+    }
+    
+}
