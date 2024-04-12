@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/ele_pay.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ 
+   background-position-x: 50%;
+   background-position-y: 50%;
+   display: block;
+ 
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+ 
+}
+.close{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #B3B3B3;
+    padding: 5px;
+}
+.close:hover{
+    color: #f74949;
+    background-color:#B3B3B3;
+
+}
+.box{
+    
+    display: flexbox;
+    position: fixed;
+    margin: auto;
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    align-items: center;
+    background-color: #2e2e2eb7;
+    border-radius: 5%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    align-items: center;
+   
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: aliceblue;
+    color: aliceblue;
+    font-family: 'Ubuntu-Bold';
+    
+    }
+
+.card-details p{
+      font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #B3B3B3 ;
+        font-style: Bold;
+        margin: 10px;
+       
+    }
+
+.last-content button{
+        padding: 10px;
+        margin: 20px;
+        color: #F67777;
+        background-color: white;
+        text-align: center;
+        border: 0;
+        border-radius: 90pc;
+        cursor: pointer;
+      
+    }
+
+    .last-content button:hover{
+        color: #fff;
+        background-color: #F67777;
+    }
+    
+label{
+   
+        color: #fff;
+        margin-right: 2px;
+        
+    }
+    
+.field{
+    
+        width: 130px;
+        padding: 0.5em 1em;
+        margin: 1em 0;
+        background: none;
+        outline: none;
+        border: 1px solid #B3B3B3;
+        -webkit-appearance: none;
+        font-size: 0.9em;
+        color: #B3B3B3;
+        text-align: justify;
+    }
+    select{
+        background: none;
+        color: #B3B3B3;
+        margin:  1em 0;
+    }
+  select  option{
+        border: 1px solid #B3B3B3;
+        background-color: #575757b6;
+        color: #fff;
+    }
+
+   
+    
+    ::placeholder{
+        color: #b3b3b3;
+    }
+  
+    .inupt-box{
+        align-items: center;
+    }
+    .check{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+
+    }
+     #chek{
+        margin: 10px;
+    }
+    .submit-now-btn{
+        width: 150px;
+        height: 50PX;
+        margin: 10px;
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #f74949;
+        border: 0;
+      
+        cursor: pointer;
+    }
+  
+    .submit-now-btn:hover{
+        background-color: #fff;
+        color: #f74949;
+    }
+/****************responsive***************************************************************/
+        @media only screen and (max-width:1024px){
+           
+            .logo{
+          
+                width: 50%;
+            }
+            .close{
+                position: fixed;
+                right: 5%;
+                top: 5%;
+                padding: 5px;
+            }
+           
+        .box{
+                    
+            display: flexbox;
+            position: fixed;
+            margin: auto;
+            width: fit-content;
+            justify-content: center;
+            height: fit-content;
+            align-items: center;
+            border-radius: 5%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            right: 25%;
+            bottom: 25%;
+            transform: translate(-50% -50%);
+            text-align: center;
+            align-items: center;
+            padding: 17px;
+        }
+        h2{
+            text-align: center;
+            font-size: 28px;
+            }
+                    
+        .card-details p{
+            font-size: 18px;
+            margin: 9px;
+            
+        }
+
+            .last-content button{
+                padding: 9px;
+                margin: 19px;
+            }
+                        
+            label{
+                margin-right: 1.9px;  
+            }
+
+            .field{
+                width: 120px;
+                padding: 0.45em 0.9em;
+                margin: 0.9em 0;
+                font-size: 0.85em;
+            }
+            select{
+                margin:  0.95em 0;
+            }
+    
+            .check{
+                margin-top: 9px;
+                margin-bottom: 9px;
+                margin-right: 4px;
+        
+            }
+            #chek{
+                margin: 9px;
+            }
+            .submit-now-btn{
+                width: 145px;
+                height: 45PX;
+                font-size: 24px;
+            }
+
+        }
+        @media  screen and (max-width:768px) {
+              
+              .logo{
+              display: flex;
+              }
+              .close{
+                position: fixed;
+                right: 5%;
+                top: 5%;
+                padding: 5px;
+            }
+           
+          
+            h2{
+                text-align: center;
+                font-size: 25px;
+                }          
+                      
+          .card-details p{
+              font-size: 16px;
+              margin: 8px;
+              
+          }
+          .box{
+          display: flexbox;
+            position: fixed;
+            margin: auto;
+            width: fit-content;
+            justify-content: center;
+            height: fit-content;
+            align-items: center;
+            border-radius: 5%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            right: 25%;
+            bottom: 25%;
+            transform: translate(-50% -50%);
+            text-align: center;
+            align-items: center;
+            padding: 16;
+          }
+  
+              .last-content button{
+                  padding: 8px;
+                  margin: 18px;
+              }
+                          
+              label{
+                  margin-right: 1.5px;  
+              }
+  
+              .field{
+                  width: 100px;
+                  padding: 0.4em 0.8em;
+                  margin: 0.8em 0;
+                  font-size: 0.8em;
+              }
+              select{
+                  margin:  0.9em 0;
+              }
+        
+              .check{
+                  margin-top: 8px;
+                  margin-bottom: 8px;
+                  margin-right: 4px;
+          
+              }
+              #chek{
+                  margin: 8px;
+              }
+              .submit-now-btn{
+                  width: 130px;
+                  height: 40PX;
+                  font-size: 22px;
+              }
+     
+        }
+
+        @media screen and (max-width:425px) {
+         
+              .logo{
+            display: flex;
+              }
+              .close{
+                position: fixed;
+                right: 5%;
+                top: 5%;
+                padding: 5px;
+            }
+            .box{
+                display: flexbox;
+                  position: fixed;
+                  margin: auto;
+                  width: fit-content;
+                  justify-content: center;
+                  height: fit-content;
+                  align-items: center;
+                  border-radius: 5%;
+                  position: absolute;
+                  top: 25%;
+                  left: 25%;
+                  right: 25%;
+                  bottom: 25%;
+                  transform: translate(-50% -50%);
+                  text-align: center;
+                  align-items: center;
+                  padding: 14;
+                }
+         
+            h2{
+                text-align: center;
+                font-size: 20px;
+                }
+                .card-details p{
+                    font-size: 14px;
+                    margin: 7px;
+                    
+                }
+        
+                    .last-content button{
+                        padding: 7px;
+                        margin: 16px;
+                    }
+                                
+                    label{
+                        margin-right: 1.2px;  
+                    }
+        
+                    .field{
+                        width: 90px;
+                        padding: 0.35em 0.8em;
+                        margin: 0.75em 0;
+                        font-size: 0.7em;
+                    }
+                    select{
+                        margin:  0.8em 0;
+                    }
+              
+                    .check{
+                        margin-top: 7px;
+                        margin-bottom: 7px;
+                        margin-right: 3.5px;
+                
+                    }
+                    #chek{
+                        margin: 7px;
+                    }
+                    .submit-now-btn{
+                        width: 110px;
+                        height: 30PX;
+                        font-size: 20px;
+                    }
+           
+        }
+        @media screen and (max-width:375px) {
+          
+             
+              .close{
+                position: fixed;
+                right: 5%;
+                top: 5%;
+                padding: 5px;
+            }
+           
+        
+            .logo{
+                display: flex;
+            }
+            .box{
+                display: flexbox;
+                  position: fixed;
+                  margin: auto;
+                  width: fit-content;
+                  justify-content: center;
+                  height: fit-content;
+                  align-items: center;
+                  border-radius: 5%;
+                  position: absolute;
+                  top: 25%;
+                  left: 25%;
+                  right: 25%;
+                  bottom: 25%;
+                  transform: translate(-50% -50%);
+                  text-align: center;
+                  align-items: center;
+                  padding: 13;
+                }
+            h2{
+                text-align: center;
+                font-size: 15px;
+                }
+                .card-details p{
+                    font-size: 11px;
+                    margin: 6px;
+                    
+                }
+        
+                    .last-content button{
+                        padding: 6px;
+                        margin: 14px;
+                    }
+                                
+                    label{
+                        margin-right: 1px;  
+                    }
+        
+                    .field{
+                        width: 80px;
+                        padding: 0.3em 0.7em;
+                        margin: 0.7em 0;
+                        font-size: 0.6em;
+                    }
+                    select{
+                        margin:  0.7em 0;
+                    }
+              
+                    .check{
+                        margin-top: 6px;
+                        margin-bottom: 6px;
+                        margin-right: 3px;
+                
+                    }
+                    #chek{
+                        margin: 6px;
+                    }
+                    .submit-now-btn{
+                        width: 90px;
+                        height: 25PX;
+                        font-size: 18px;
+                    }
+           
+            }
+        
